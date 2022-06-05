@@ -18,8 +18,8 @@ val readFileDependencies = Seq(
   "com.lihaoyi" %% "os-lib" % "0.8.0"
 )++sparkDependencies
 
-//val testDependencies = Seq(
-//  "org.scalatest" % "scalatest_2.11" % "2.2.6" % "test"
-//)++readFileDependencies
+val testDependencies = Seq(
+  "org.scalatest" %% "scalatest" % "3.2.12" % Test
+)++readFileDependencies
 
-libraryDependencies ++= readFileDependencies
+libraryDependencies ++= testDependencies
